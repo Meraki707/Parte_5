@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #fceffd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container{
+        background-color: rgb(241, 221, 255);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
+        width: 300px;
+    }
+
+    input{
+        width: 90%;
+        padding: 8px;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button{
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        background-color: #7e01af;
+        color: white;
+        cursor: pointer;
+    }
+
+    #r{
+        margin-top: 15px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <div class="container"> 
+    <h1>Bem-vindo!</h1>
+    <h2>Calcular soma e Média</h2>
+
+    <input type="number" id="n1" placeholder="Número 1">
+    <br><br>
+    <input type="number" id="n2" placeholder="Número 2">
+    <br><br>
+
+    <button onclick="SomaMedia()">Calcular</button>
+
+    <p id="r"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
